@@ -27,6 +27,10 @@ Comment "!needs_collection_redirect" in the issue and the bot will override the 
 1. Determine which collection+repo the file should live in now.
 2. Migrate your PR or issue to the new repo
 
+## How do I find the correct new repo?
+
+In most cases, the bot comment can link from your issue or PR to the correct new GitHub repo using the Fully Qualified Collection Name (FQCN) that matches your issue or PR. The FQCN combines a namespace, a collection name, and a plugin name. If your issue or PR has no link, you can search on Ansible Galaxy for the collection using "namespace.collection_name" and look for the "Issue tracker" or "Repo" link.
+
 ## How do I migrate my issue to another repo?
 
 Github only allows issue migration between repos in the same organization. Most collections are in the ansible-collections org so we are unable
